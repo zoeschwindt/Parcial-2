@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [Header("Interacción")]
     public float rayDistance = 2f;
 
-    // Input System (Encapsulamiento con [SerializeField] y campos privados)
+    // Input System (Encapsulamiento con [SerializeField ] y campos privados)
     [SerializeField] private InputActionAsset inputActions;
 
     private InputAction moveAction;
