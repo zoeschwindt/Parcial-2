@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [Header("Interacción")]
     public float rayDistance = 2f;
 
-    // Input System (Encapsulamiento con [SerializeField ] y campos privados)
+    // Encapsulamiento
     [SerializeField] private InputActionAsset inputActions;
 
     private InputAction moveAction;
@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour
     void TryInteract()
     {
         RaycastHit hit;
-        // Lanza un rayo hacia adelante para detectar objetos
+        
         if (Physics.Raycast(transform.position, transform.forward, out hit, rayDistance))
         {
             Debug.Log("Raycast hit: " + hit.collider.name);

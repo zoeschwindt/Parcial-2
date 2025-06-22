@@ -1,33 +1,32 @@
 using UnityEngine;
 
-// Clase que representa un cofre en el juego
-// Esta clase hereda de TempleObject, que es una clase abstracta base para objetos interactuables
+// Herencia: Chest hereda de TempleObject, que es una clase abstracta base para objetos interactuables
 public class Chest : TempleObject
 {
-    // Propiedad privada que almacena la cantidad de oro
+    // Encapsulamiento
     private int goldAmount;
 
-    // Getter y setter con lógica para evitar valores negativos
+    // Encapsulamiento y Propiedades (getters/setters) con lógica para validar valores negativos
     public int GoldAmount
     {
         get { return goldAmount; }
         set
         {
-            if (value >= 0) // Validación para proteger la propiedad
+            if (value >= 0) 
             {
                 goldAmount = value;
             }
         }
     }
 
-    // Método Start se usa para inicializar el objeto cuando inicia el juego
+    // Inicialización: método Start para asignar valor inicial al oro cuando inicia el juego
     void Start()
     {
-        GoldAmount = 100; // Se asigna un valor inicial al oro
+        GoldAmount = 100; 
     }
 
-    // Método que implementa la interacción con el cofre
-    // Aplica lógica condicional para verificar si tiene oro o no
+    // Polimorfismo: Override del método abstracto Interact() definido en TempleObject
+    // Lógica condicional: Comportamiento diferente según si hay oro o no
     public override void Interact()
     {
         if (GoldAmount > 0)
