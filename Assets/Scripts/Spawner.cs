@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    // Instanciación dinámica: este prefab se va a crear en tiempo de ejecución.
     public GameObject prefabToSpawn;
+
+    // Lugar donde se va a instanciar el nuevo objeto.
     public Transform spawnPoint;
 
+    // Encapsulamiento: variable privada que controla si ya se hizo un spawn o no.
     private bool hasSpawned = false;
 
-    
-    void Start()
-    {
-        
-    }
-
+    // Método público que permite crear el objeto si no se ha creado antes.
+    // Aplica lógica condicional para controlar el comportamiento.
     public void SpawnObject()
     {
         if (!hasSpawned && prefabToSpawn != null && spawnPoint != null)
@@ -36,7 +36,8 @@ public class Spawner : MonoBehaviour
             Debug.LogWarning("Spawner: prefabToSpawn or spawnPoint is not assigned.");
         }
     }
-
+    // Corrutina que espera un tiempo antes de modificar al objeto Horse.
+    // Encapsulamiento: se accede a la propiedad CanNeigh a través del setter, no directamente.
     private System.Collections.IEnumerator MakeHorseTiredAfterSeconds(Horse horse, float seconds)
     {
         yield return new WaitForSeconds(seconds);
