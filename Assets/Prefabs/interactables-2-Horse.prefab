@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6258699573770623326}
   - component: {fileID: 6538718243749132408}
   m_Layer: 0
-  m_Name: interactuables-1
+  m_Name: interactables-2-Horse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

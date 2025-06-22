@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 284840397}
   - component: {fileID: 284840398}
   m_Layer: 0
-  m_Name: Spaner
+  m_Name: Spawn-Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,7 +288,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3471643304241853864, guid: feb46b78f78e74267836b445901cf537, type: 3}
       propertyPath: m_Name
-      value: interactuables-4
+      value: interactables-2-Chest
       objectReference: {fileID: 0}
     - target: {fileID: 3471643304242014600, guid: feb46b78f78e74267836b445901cf537, type: 3}
       propertyPath: m_LocalScale.x
@@ -578,6 +578,30 @@ PrefabInstance:
     - target: {fileID: 3313503507553837648, guid: 4ad7a5a7fc42f6b49945c81440d0dfe0, type: 3}
       propertyPath: m_Center.z
       value: 5.6029942e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337708592676820234, guid: 4ad7a5a7fc42f6b49945c81440d0dfe0, type: 3}
+      propertyPath: m_Size.x
+      value: 7.780655
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337708592676820234, guid: 4ad7a5a7fc42f6b49945c81440d0dfe0, type: 3}
+      propertyPath: m_Size.z
+      value: 2.3587809
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337708592676820234, guid: 4ad7a5a7fc42f6b49945c81440d0dfe0, type: 3}
+      propertyPath: m_Center.x
+      value: 2.6567612
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337708592676820234, guid: 4ad7a5a7fc42f6b49945c81440d0dfe0, type: 3}
+      propertyPath: m_Center.z
+      value: -0.696918
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337708593329626506, guid: 4ad7a5a7fc42f6b49945c81440d0dfe0, type: 3}
+      propertyPath: m_Size.x
+      value: 1.991992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337708593329626506, guid: 4ad7a5a7fc42f6b49945c81440d0dfe0, type: 3}
+      propertyPath: m_Center.x
+      value: 0.5135255
       objectReference: {fileID: 0}
     - target: {fileID: 6184813801727592772, guid: 4ad7a5a7fc42f6b49945c81440d0dfe0, type: 3}
       propertyPath: m_Size.x
@@ -994,7 +1018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8601614153650410788, guid: 7958953c6add11642997533e9e211f5e, type: 3}
       propertyPath: m_Name
-      value: interactuables-3
+      value: interactables-2-Dorr
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1232,37 +1256,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400070, guid: 3353e4f866c39d043a315b41717c9bb7, type: 3}
   m_PrefabInstance: {fileID: 997668585}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1014797216
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1014797217}
-  m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1014797217
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014797216}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 154.93, y: 9.156902, z: -50.85}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1261957875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,7 +1479,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1298244869470481575, guid: 166c323865f832a4cbca2fce8eaa3eeb, type: 3}
       propertyPath: m_Name
-      value: interactuables-2
+      value: interactables-2-Car
       objectReference: {fileID: 0}
     - target: {fileID: 1823846214545880605, guid: 166c323865f832a4cbca2fce8eaa3eeb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1565,4 +1558,3 @@ SceneRoots:
   - {fileID: 786961542}
   - {fileID: 290129318}
   - {fileID: 630004047}
-  - {fileID: 1014797217}
