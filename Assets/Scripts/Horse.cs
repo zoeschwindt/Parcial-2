@@ -1,11 +1,12 @@
 using UnityEngine;
 
-// Clase Horse que hereda de TempleObject e implementa la interacción
+// Herencia: la clase Horse hereda de TempleObject, una clase base abstracta.
 public class Horse : TempleObject
 {
+    // Encapsulamiento: componente privado para reproducir sonido.
     private AudioSource audioSource;
 
-    // Propiedad privada que controla si el caballo puede relinchar
+    // Encapsulamiento: propiedad privada para controlar si el caballo puede relinchar o no.
     private bool canNeigh = true;
 
     // Getter y setter para la propiedad canNeigh
@@ -20,10 +21,10 @@ public class Horse : TempleObject
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Método que se llama al interactuar
+    //Polimorfismo: se sobreescribe el método Interact() definido en la clase abstracta TempleObject.
     public override void Interact()
     {
-        // Solo relincha si puede y no está ya sonando
+        // Lógica condicional: reproduce sonido solo si puede relinchar y no está ya sonando.
         if (audioSource != null && !audioSource.isPlaying && CanNeigh)
         {
             audioSource.Play();
