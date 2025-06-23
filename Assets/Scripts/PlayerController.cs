@@ -75,16 +75,16 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        // Bloqueamos rotación para que el Rigidbody no lo desacomode
+        
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-        // Ocultamos el cursor y lo bloqueamos
+       
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     void Update()
     {
-        // Usamos el input del mouse para girar el jugador
+       
         float mouseX = lookInput.x * mouseSensitivity * Time.deltaTime;
         rotationY += mouseX;
         transform.rotation = Quaternion.Euler(0f, rotationY, 0f);

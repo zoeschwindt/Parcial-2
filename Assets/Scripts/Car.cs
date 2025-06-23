@@ -37,4 +37,20 @@ public class Car : TempleObject
             Debug.Log("Car already moved, no spawn.");
         }
     }
+    // Expresión lambda: se usa una función anónima para aplicar daño al jugador si choca con el auto
+    private void OnCollisionEnter(Collision collision)
+    {
+        // Definición de la lambda: recibe un PlayerHealth y le aplica daño
+        System.Action<PlayerHealth> damagePlayer = (hp) => hp.TakeDamage(1);
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerHealth health = collision.gameObject.GetComponent<PlayerHealth>();
+            if (health != null)
+            {
+                damagePlayer(health); 
+            }
+        }
+    }
 }
+
